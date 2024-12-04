@@ -6,11 +6,11 @@ Simple TCP/UDP server that listens on port 8080 and echos back the received mess
 
 ## Usage
 
-Build and run the server:
+Build and run the server (select either DualSocketServer or MinaDualSocketServer):
 
 ```bash
 mvn clean package
-java -jar target/tcp-udp-server-1.0-SNAPSHOT.jar
+java -jar target/dualserver-1.0-SNAPSHOT.jar [DualSocketServer|MinaDualSocketServer]
 ```
 
 That will start the server listening on port 8080 for both TCP and UDP connections; it will echo back any message received.
